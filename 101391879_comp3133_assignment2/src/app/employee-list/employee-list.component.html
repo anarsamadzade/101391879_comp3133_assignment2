@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let employee of employees">
+      {{ employee.firstName }} {{ employee.lastName }} - {{ employee.email }}
+      <button (click)="updateEmployee(employee.id)">Update</button>
+      <button (click)="deleteEmployee(employee.id)">Delete</button>
+      <button (click)="viewEmployee(employee.id)">View</button>
+    </li>
+  </ul>
+  
